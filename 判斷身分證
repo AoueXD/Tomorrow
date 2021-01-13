@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> 
+
+using namespace std;
+
+int main () {
+	
+	
+	char doc[100][100];
+	int i = 0;
+	
+	while(scanf("%s", doc[i]) != EOF) {
+		printf("%s\t%c\n", doc[i], doc[i][0]);
+		
+		//以下是判斷ID是否正確 
+		
+		printf("%s\t", doc[i]); 
+		if(strlen(doc[i]) != 10)
+			printf("Error\n");
+		else 
+			printf("Correct \n");
+		//	if('doc[i][0]' !=  
+		
+		
+		i++;
+	}
+}
